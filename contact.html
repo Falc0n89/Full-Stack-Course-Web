@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Store: Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="tech_store.css">
+
 </head>
 
 <body>
@@ -18,6 +21,7 @@
             <li><a href="contact.html">contact us</a></li>
             </ul>
         </nav>
+        <input type="search" placeholder="search...">
     </header>
     <!-- Side bar for categories and price filters-->
 <aside>
@@ -50,6 +54,7 @@
    
 </aside>
 
+
 <main>
     <h1>Contact Us</h1>
 
@@ -67,7 +72,7 @@
         <label for="message">Message:</label> <textarea name="" id="" cols="30" rows="5" id="message" name="message"></textarea>
     </div>
 
-    <div>
+    <!-- <div>
         <label for="subject">Subject:</label>
         <select name="" id="subject">
             <optgroup label="Product Issues">
@@ -84,6 +89,19 @@
             </optgroup>
             
         </select>
+    </div> -->
+
+    <div>
+        <label for="subject">Subject:</label>
+        <input type="text" list="subjects" id="subject" placeholder="Enter your text">
+        <datalist id="subjects">
+                <option value="returns">
+                <option value="faulty item"></option>
+                <option value="delivery"></option>
+                <option value="order tracking"></option>
+                <option value="advice"></option>
+                <option value="other"></option>
+        </datalist>
     </div>
 
 <div>
@@ -107,9 +125,16 @@
     <input type="radio" id="emailResponse" name="response" value="email">
 </div>
 
+    <div>
+        <input type="submit">
+        <input type="reset">
+        <!-- <button type="submit">Talk to us!</button> -->
+    </div>
     </form>
+
+    <iframe width="600" height="450" frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyDucGBk05g5mx2Mqkst2Jyvdar4QhMhllg" allowfullscreen></iframe> 
     
-  
 
 </main>
 
