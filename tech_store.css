@@ -1,0 +1,23 @@
+html {
+    background: #f7f7f7;
+}
+body {
+    background: white;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Barlow', sans-serif;
+}
+header, footer {
+    background: #234677;
+    color: white;
+}
+
+.product {
+    border: 1px solid grey;
+    width: 200px;
+}
+
+img {
+    max-width: 200px;
+}
+
