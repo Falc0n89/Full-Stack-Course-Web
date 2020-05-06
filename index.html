@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="tech_store.css">
+
 </head>
-<style>
-    header {
-        background-color: rgb(109, 122, 182);
-    }
-</style>
+
 <body>
 
 <!--
@@ -21,7 +20,7 @@ TODO:
 
 -->
 
-    <header>
+   <header>
         <h1>Tech Store</h1>
 
         <nav>
@@ -31,6 +30,7 @@ TODO:
             <li><a href="contact.html">contact us</a></li>
             </ul>
         </nav>
+        <input type="search" placeholder="search...">
     </header>
     <!-- Side bar for categories and price filters-->
 <aside>
@@ -66,7 +66,7 @@ TODO:
 <!-- Main section to display products -->
     <main>
         <h2>All Items:</h2>
-        <article>
+        <article class="product">
             <a href="product-detail.html"><img src="images/controller.jpg" alt="XBox One Game Controller picture">
             </a>
             
@@ -79,7 +79,7 @@ TODO:
             <a href="">Add To Cart</a>
         </article>
 
-        <article>
+        <article class="product">
             <a href=""><img src="images/headphones.jpg" alt="White headphones picture"></a>
             
             <h4><a href="">White Headphones</a></h4>
@@ -89,7 +89,7 @@ TODO:
             <a href="">Add To Cart</a>
         </article>
 
-        <article>
+        <article class="product">
             <a href=""><img src="images/camera.jpg" alt="Picture of a camera"></a>
 
             <h4><a href="">DSLR Camera</a></h4>
@@ -99,7 +99,7 @@ TODO:
             <a href="">Add To Cart</a>
         </article>
 
-        <article>
+        <article class="product">
             <a href=""><img src="images/cables.jpg" alt="Ethernet cables"></a>
 
             <h4><a href="">Ethernet Cables - Assorted Colors</a></h4>
@@ -109,7 +109,7 @@ TODO:
             <a href="">Add To Cart</a>
         </article>
 
-        <article>
+        <article class="product">
             <a href=""><img src="images/lenses.jpg" alt="Various camera lenses"></a>
 
             <h4><a href="">Camera Lenses - Various sizes</a></h4>
@@ -119,7 +119,7 @@ TODO:
             <a href="">Add To Cart</a>
         </article>
 
-        <article>
+        <article class="product">
             <a href=""><img src="images/microphone.jpg" alt="Microphone picture"></a>
 
             <h4><a href="">Desktop USB microphone</a></h4>
@@ -130,7 +130,6 @@ TODO:
         </article>
     
     </main>
-
     <footer>
         <nav>
             <ul>
