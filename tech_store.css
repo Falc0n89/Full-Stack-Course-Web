@@ -3,20 +3,33 @@ html {
 }
 body {
     background: white;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
 }
 header, footer {
-    background: #234677;
+    background: #6e99d6;
     color: white;
 }
 
 .product {
+    box-sizing: border-box;
     border: 1px solid grey;
-    width: 200px;
+    width: 210px;
     margin: 5px;
     padding: 5px;
+    display: inline-block;
+}
+
+main {
+    width: 680px;
+    display: inline-block;
+    }
+
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 ul {
@@ -24,7 +37,20 @@ ul {
     padding: 10px;
 }
 
+header li {
+    display: inline;
+}
+
+header h1, nav {
+    display: inline-block;
+}
+
 img {
     max-width: 200px;
+}
+
+.button {
+    padding: 10px;
+    display: inline-block;
 }
 
