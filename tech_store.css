@@ -19,6 +19,11 @@ header, footer {
     padding: 5px;
 }
 
+ul {
+    margin: 5px;
+    padding: 10px;
+}
+
 img {
     max-width: 200px;
 }
