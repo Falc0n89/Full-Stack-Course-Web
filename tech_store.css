@@ -6,9 +6,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
+    color: rgb(49, 46, 46);
 }
 header, footer {
-    background: #6e99d6;
+    background: #676a6d;
     color: white;
 }
 
@@ -24,17 +25,33 @@ header, footer {
 main {
     width: 680px;
     display: inline-block;
+    padding: 10px;
     }
 
 aside {
     width: 270px;
     display: inline-block;
     vertical-align: top;
+    padding: 10px;
 }
 
 ul {
-    margin: 5px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #0e69e9;
 }
 
 header li {
@@ -52,5 +69,10 @@ img {
 .button {
     padding: 10px;
     display: inline-block;
+}
+
+.button:last-of-type {
+    background: #0e69e9;
+    color: white;
 }
 
