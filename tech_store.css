@@ -22,6 +22,10 @@ header, footer {
     display: inline-block;
 }
 
+.product img {
+    max-width: 200px;
+}
+
 main {
     width: 680px;
     display: inline-block;
@@ -63,7 +67,7 @@ header h1, nav {
 }
 
 img {
-    max-width: 200px;
+    max-width: ;
 }
 
 .button {
@@ -74,5 +78,18 @@ img {
 .button:last-of-type {
     background: #0e69e9;
     color: white;
+}
+
+/* Product Detail Page */
+
+.product-detail {
+    width: 660px;
+
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: left;
+
 }
 
