@@ -34,7 +34,7 @@ footer > nav {
     /* width: 30%; */
     margin: 5px;
     padding: 5px;
-    /* display: inline-block; */
+    /*  */
     text-align: center;
     width: 100%;
     
@@ -167,6 +167,20 @@ input[type="text"], input[type="email"], textarea{
 
 form > div {
     margin: 10px 10px;
+}
+
+@media (min-width: 800px) {
+    input[type="search"] {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .product {
+        display: inline-block;
+        width: 48%;
+
+    }
+
 }
 
 
