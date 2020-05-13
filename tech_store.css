@@ -3,7 +3,7 @@ html {
 }
 body {
     background: white;
-    max-width: 1200px;
+    max-width: 80vw;
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
     color: rgb(49, 46, 46);
@@ -26,30 +26,35 @@ footer > nav {
 .product {
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 210px;
+    width: 30%;
     margin: 5px;
     padding: 5px;
     display: inline-block;
     text-align: center;
+    
     }
 
 
 
-.product img {
-    max-width: 200px;
+img {
+    max-width: 100%;
 }
 
 main {
-    width: 680px;
+    /* target / context = result */
+    /* 680 / 1000 = 0.68 */
+    width: 68%;
     display: inline-block;
     padding: 10px;
+    
     }
 
 aside {
-    width: 270px;
+    width: 27%;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
+    background-color: rgb(110, 95, 124);
 }
 
 ul {
@@ -158,3 +163,11 @@ input[type="text"], input[type="email"], textarea{
 form > div {
     margin: 10px 10px;
 }
+
+@media not screen {
+    li {
+        color: red;
+    }
+
+}
+
