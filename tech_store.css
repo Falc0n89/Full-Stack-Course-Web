@@ -3,10 +3,11 @@ html {
 }
 body {
     background: white;
-    max-width: 80vw;
+    /* max-width: 80vw; */
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
     color: rgb(49, 46, 46);
+    text-align: center;
 }
 
 
@@ -15,6 +16,10 @@ header, footer {
     background: #676a6d;
     color: white;
     padding: 20px 10px
+}
+
+input[type="search"] {
+    width: 100%;
 }
 
 footer > nav {
@@ -26,11 +31,12 @@ footer > nav {
 .product {
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 30%;
+    /* width: 30%; */
     margin: 5px;
     padding: 5px;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
+    width: 100%;
     
     }
 
@@ -40,22 +46,20 @@ img {
     max-width: 100%;
 }
 
-main {
-    /* target / context = result */
-    /* 680 / 1000 = 0.68 */
+/* main {
     width: 68%;
     display: inline-block;
     padding: 10px;
     
-    }
+    } */
 
-aside {
+/* aside {
     width: 27%;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
     background-color: rgb(110, 95, 124);
-}
+} */
 
 ul {
     margin: 0;
@@ -85,7 +89,8 @@ header h1, nav {
 }
 
 header h1 {
-    width: 70%
+    /* width: 70% */
+    width: 100%;
 }
 
 
@@ -164,10 +169,4 @@ form > div {
     margin: 10px 10px;
 }
 
-@media not screen {
-    li {
-        color: red;
-    }
-
-}
 
