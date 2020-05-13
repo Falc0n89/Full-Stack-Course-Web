@@ -3,7 +3,7 @@ html {
 }
 body {
     background: white;
-    /* max-width: 80vw; */
+    
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
     color: rgb(49, 46, 46);
@@ -15,7 +15,8 @@ body {
 header, footer {
     background: #676a6d;
     color: white;
-    padding: 20px 10px
+    padding: 20px 10px;
+    text-align: left;
 }
 
 input[type="search"] {
@@ -46,20 +47,7 @@ img {
     max-width: 100%;
 }
 
-/* main {
-    width: 68%;
-    display: inline-block;
-    padding: 10px;
-    
-    } */
 
-/* aside {
-    width: 27%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-    background-color: rgb(110, 95, 124);
-} */
 
 ul {
     margin: 0;
@@ -89,7 +77,6 @@ header h1, nav {
 }
 
 header h1 {
-    /* width: 70% */
     width: 100%;
 }
 
@@ -183,4 +170,38 @@ form > div {
 
 }
 
+@media (min-width: 1000px) {
+    main {
+        width: 68%;
+        display: inline-block;
+        padding: 10px;
+        
+        } 
+    
+    aside {
+        width: 27%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px;
+      }
+
+      header h1 {
+          width: 60%;
+      }
+
+    }
+
+    @media (min-width: 1300px) {
+       body {max-width: 80vw;
+        }
+
+        .product {
+            width: 30%;
+        }
+
+        input[type="search"] {
+            width: 20%;
+            
+        }
+    }
 
