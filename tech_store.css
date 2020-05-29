@@ -197,6 +197,10 @@ form > div {
         padding: 10px;
       }
 
+      .product {
+        width: 40%;
+    }
+
       header h1 {
           width: 60%;
       }
