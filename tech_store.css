@@ -10,14 +10,29 @@ body {
     text-align: center;
 }
 
-#container {
-    display: flexbox;
+/* #container {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    justify-items: stretch;
-    justify-self: initial;
-    align-items: baseline;
-}
+    align-items: space-around;
+    overflow: hidden;
+    
+} */
 
+/* #leftPage {
+    
+    justify-self: left;
+    overflow: hidden;
+} */
+
+.product {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    
+    }
 
 
 header, footer {
@@ -37,17 +52,7 @@ footer > nav {
         margin-top: 20px;
 }
 
-.product {
-    display: flex;
-    align-content: stretch;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    /* width: 30%; */
-    margin: 5px;
-    padding: 5px; */
-    
-    
-    }
+
 
 
 
@@ -184,16 +189,20 @@ form > div {
 @media (min-width: 1000px) {
     main {
         width: 68%;
-        display: inline-block;
+        display: inline-flex;
         padding: 10px;
-        
         } 
+
+        footer {
+            
+        }
     
     aside {
         width: 27%;
         display: inline-block;
         vertical-align: top;
         padding: 10px;
+        height: 100vh;
       }
 
       header h1 {
