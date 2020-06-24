@@ -2,6 +2,13 @@ html {
     background: #f7f7f7;
 }
 body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: "header header"
+                         "aside container"
+                         
+                         "footer footer";
     background: white;
     
     margin: 0 auto;
@@ -10,7 +17,15 @@ body {
     text-align: center;
 }
 
+header {
+    grid-row: header;
+    grid-column: header;
+}
 
+footer {
+    grid-row: footer;
+    grid-column: footer;
+}
 
 header, footer {
     background: #676a6d;
@@ -41,22 +56,22 @@ footer > nav {
     }
 
     aside {
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 1;
+        grid-row: aside;
+        grid-column: aside;
+        text-align: center;
+        justify-items: center;
     }
 
-
-#container {
+    main {
+        grid-row: container;
+        grid-column: container;
         display: grid;
-        grid-template-columns: 1fr repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows:  repeat(4, 1fr);
-        
     }
 
-#sidebar {
-    display: grid;
-}
+
+
 
 
 img {
@@ -184,9 +199,7 @@ form > div {
         width: 40%;
         margin-left: 2em;
     }
-    aside {
-        display: grid;
-    }
+  
 
 /* 
     .product {
@@ -227,9 +240,7 @@ form > div {
        body {max-width: 80vw;
         }
 
-        aside {
-            display: grid;
-        }
+       
 
         /* .product {
             width: 40%;
@@ -252,9 +263,7 @@ form > div {
             margin-left: 30px; */
         }
 
-     aside {
-         display: grid;
-     }
+   
    
     form {
         width: 80%;
