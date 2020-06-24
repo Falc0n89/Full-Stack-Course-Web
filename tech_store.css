@@ -32,7 +32,7 @@ footer > nav {
 .product {
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 30%;
+    /* width: 40%; */
     margin: 5px;
     padding: 5px;
     text-align: center;
@@ -40,19 +40,28 @@ footer > nav {
     
     }
 
-#container {
-        background-color: khaki;
-        display: flex;
-        flex-flow: row wrap;
-        align-self: center;
-        align-items: center;
-        justify-self: center;
+    aside {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
     }
 
+
+#container {
+        display: grid;
+        grid-template-columns: 1fr repeat(3, 1fr);
+        grid-template-rows:  repeat(4, 1fr);
+        
+    }
+
+#sidebar {
+    display: grid;
+}
 
 
 img {
     max-width: 100%;
+    
 }
 
 .product img {
@@ -96,6 +105,7 @@ header h1 {
     padding: 10px;
     display: inline-block;
     text-align: center;
+    vertical-align: bottom;
 }
 
 .button:last-of-type {
@@ -121,13 +131,16 @@ header h1 {
 
 
 /* Table */
-
+ 
 table {
     width: 400px;
     text-align: left;
-    margin: 20px 0 0 200px;
-    vertical-align: center;
+    margin: 0 20% 0 30%;
+    
+    
 }
+
+
 
 caption {
     font-weight: bold;
@@ -171,66 +184,77 @@ form > div {
         width: 40%;
         margin-left: 2em;
     }
+    aside {
+        display: grid;
+    }
 
-
-
+/* 
     .product {
-        /* display: inline-block; */
+        
         max-width: 60%;
 
-    }
+    } */
    
-}
+} 
 
 @media (min-width: 1000px) {
     main {
         width: 80%; 
-        /* display: inline-block; */
+        
         padding: 10px;
         
         } 
     
     aside {
-        width: 27%;
-        display: inline-block;
+        width: 25%;
+        display: grid;
+
         vertical-align: top;
         padding: 10px;
       }
 
-      .product {
-        width: 40%;
-    }
+      /* .product {
+        width: 800%;
+      } */
 
       header h1 {
           width: 60%;
       }
 
-    }
-
+    } 
+ 
     @media (min-width: 1300px) {
        body {max-width: 80vw;
         }
 
-        .product {
-            width: 40%;
+        aside {
+            display: grid;
         }
+
+        /* .product {
+            width: 40%;
+        } */
 
         input[type="search"] {
             width: 20%;
             
-        }
+        } 
 
        
-    }
+    } 
 
     @media (max-width: 600px) {
         iframe {
             width: 80%;
         }
-        .product {
-            width: 30%;
-            margin-left: 30px;
+        /* .product {
+            width: 100%;
+            margin-left: 30px; */
         }
+
+     aside {
+         display: grid;
+     }
    
     form {
         width: 80%;
@@ -240,4 +264,4 @@ form > div {
         margin-left: 10px;
     }
 
-    } 
+    
